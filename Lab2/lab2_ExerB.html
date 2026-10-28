@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Feedback</title>
+</head>
+
+<!-- Error 1 (Line 4): missing meta name="description" -->
+<!-- Error 2 (Line 10): closing tag of <header> should be </header> instead of </head> -->
+<!-- Error 3 (Line 20): tag for table header should be <th> instead of <td> -->
+<!-- Error 4 (Line 25): missing closing tag for <tr> -->
+<!-- Error 5 (Line 32): missing closing tag for <td> Semantic HTML and missing indent for <td>4.0</td> -->
+<!-- Error 6 (Line 28): table row was 4 columns wide and exceeded the column count established by first row -->
+<!-- Error 7 (Line 39): for="name" should be removed. The value of the for attribute of the label element must be the ID of a non-hidden form control -->
+<!-- Error 8 (Line 47): for="labs" should be replaced with for="lab" -->
+<!-- Error 9 (Line 49): misspelling in </from> instead of </form> -->
+<!-- Error 10 (Line 52): missing ; after &copy-->
+
+<body>
+    <header>
+        <h1>CSF3133 Course Feedback</h1>
+    </header>
+    <nav>
+        <a href="#results">Results</a> | <a href="#form">Feedback Form</a> 
+    </nav>
+    <section id="results">
+        <h2>Feedback Summary</h2>
+        <table border="1">
+            <tr>
+                <th>Week</th>
+                <th>Topic</th>
+                <th>Rating</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Introduction to HTML</td>
+                <td>4.5</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td colspan="2">Tables and Form</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Semantic HTML</td>
+                <td>4.0</td>
+            </tr>
+        </table>
+    </section>
+    <section id="form">
+        <h2>Submit Your Feedback</h2>
+        <form action="submit_feedback.php" method="post">
+            <label>Name:</label>
+            <input type="text" id="fullname" name="name"><br><br>
+            <label>Overall Rating:</label><br>
+            <input type="radio" id="good" name="good" value="good">
+            <label for="good">Good</label>
+            <input type="radio" id="poor" name="poor" value="poor" required>
+            <label for="poor">Poor</label><br><br>
+            <input type="checkbox" id="lab" name="lab" value="yes">
+            <label for="lab">I attended all labs</label><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <p>Copyright &copy; 2026 CSF3133</p>
+    </footer>    
+</body>
+</html>
