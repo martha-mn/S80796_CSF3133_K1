@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon</title>
+</head>
+<body>
+   <header>
+    <!-- This is the header section -->
+    <h1>Welcome to the Hackathon Event</h1>
+    <p>Join us for an exciting hackathon where you can showcase your coding skills and collaborate with fellow developers!</p>
+   </header> 
+
+   <!-- This is the navigation section -->
+   <nav>
+       <a href="#schedule">Event Schedule</a> | <a href="#register">Register</a> | <a href="#about">About</a>
+   </nav>
+
+   <!-- This is the about section-->
+   <section id="aboutevent">
+        <h2>About the Hackathon</h2>
+        <article>
+            <h3>Event Details</h3>
+            <p>The hackathon is a 24-hour event where participants work in teams to create innovative solutions to real-world problems.</p>
+        </article>
+        <article>
+            <h3>Participant Eligibility</h3>
+            <p>This event is open to all undergraduate students.</p>
+        </article>
+   </section>
+
+   <!-- This is the event schedule section -->
+   <section id="eventschedule">
+        <h2>Event Schedule</h2>
+        <table border="1">
+            <tr>
+                <th>Time</th>
+                <th>Activity</th>
+                <th>Venue</th>
+                <th>Person in Charge</th>
+            </tr>
+            <tr>
+                <td>9:00 AM - 10:00 AM</td>
+                <td>Registration and Welcome</td>
+                <td>Main Hall</td>
+                <td>Martha</td>
+            </tr>
+            <tr>
+                <td>10:00 AM - 11:00 AM</td>
+                <td>Team Formation and Idea Pitching</td>
+                <td>Room A</td>
+                <td>Jane</td>
+            </tr>
+            <tr>
+                <td>11:00 AM - 1:00 PM</td>
+                <td>Coding and Development</td>
+                <td>Lab 1</td>
+                <td>Bob</td>
+            </tr>
+            <tr>
+                <td>1:00 PM - 2:00 PM</td>
+                <td colspan="3">Lunch Break</td>
+            </tr>
+            <tr>
+                <td>2:00 PM - 4:00 PM</td>
+                <td>Coding and Development</td>
+                <td rowspan="2">Lab 1</td>
+                <td>Bob</td>
+            </tr>
+            <tr>
+                <td>4:00 PM - 5:00 PM</td>
+                <td>Final Presentations and Judging</td>
+                <td>Martha</td>
+            </tr>
+        </table>
+   </section>
+
+   <!-- This is the registration section -->
+   <section id="registration">
+        <h2>Hackathon Registration</h2>
+        <form action="register.html" method="post">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required><br><br>
+
+            <label for="matricno">Matric No:</label>
+            <input type="text" id="matricno" name="matricno" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label>Year of Study:</label><br>
+            <input type="radio" id="year1" name="yearofstudy" value="year1">
+            <label for="year1">Year 1</label>
+            <input type="radio" id="year2" name="yearofstudy" value="year2">
+            <label for="year2">Year 2</label>
+            <input type="radio" id="year3" name="yearofstudy" value="year3">
+            <label for="year3">Year 3</label>
+            <input type="radio" id="year4" name="yearofstudy" value="year4">
+            <label for="year4">Year 4</label><br><br>
+
+            <label>Select session:</label><br>
+            <input type="checkbox" id="session1" name="session1" value="session1">
+            <label for="session1">Session 1</label>
+            <input type="checkbox" id="session2" name="session2" value="session2">
+            <label for="session2">Session 2</label>
+            <input type="checkbox" id="session3" name="session3" value="session3">
+            <label for="session3">Session 3</label><br><br>
+            
+            <label for="faculty">Select Faculty:</label>
+            <select id="faculty" name="faculty">
+                <option value="faculty1">Faculty of Computer Science</option>
+                <option value="faculty2">Faculty of Engineering</option>
+                <option value="faculty3">Faculty of Business</option>
+                <option value="faculty4">Faculty of Arts</option>
+            </select><br><br>
+
+            <input type="submit" value="Register">
+        </form>
+   </section>
+
+</body>
+</html>
