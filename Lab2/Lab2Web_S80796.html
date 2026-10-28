@@ -1,1 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Profile Page</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Web Page</h1>
+    </header>
 
+    <nav>
+        <a href="#home">Home</a> | <a href="#about">About</a> | <a href="#contact">Contact</a>
+    </nav>
+
+    <section>
+        <article>
+            <h2>About Me</h2>
+            <p>Hello! I'm Martha, a university student.</p>
+        </article>
+    </section>
+
+    <table border="1">
+        <tr>
+            <th>No.</th>
+            <th>Information</th>
+            <th>Details</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Name:</td>
+            <td>Martha</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Age:</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Occupation:</td>
+            <td>University Student</td>
+        </tr>
+    </table>
+
+    <h2>User Information Form</h2>
+    <form action="submit_form.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <label for="hobby">Select your hobby:</label><br>
+        <input type="checkbox" id="hobby1" name="hobby1" value="reading">
+        <label for="hobby1">Reading</label><br>
+        <input type="checkbox" id="hobby2" name="hobby2" value="sports">
+        <label for="hobby2">Sports</label><br> 
+        <input type="checkbox" id="hobby3" name="hobby3" value="music">
+        <label for="hobby3">Music</label><br><br>
+
+        <input type="submit" value="Submit">
+
+    <footer>
+        <p>&copy; 2026 My Web Page. All rights reserved.</p>
+    </footer>
+</body>
+</html>
