@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMT Campus Bakery</title>
+</head>
+<body>
+    <!-- Header section -->
+    <div id="header">
+        <h1>UMT Campus Bakery<span> "No.1 bakery on campus"</span></h1>
+    </div>
+
+    <!-- Navigation -->
+    <div id="nav">
+        <span><a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="contact.html">Contact</a></span>
+    </div>
+
+    <!-- Main content -->
+    <hr>
+    <div id="content">
+        <h2>About Us</h2>
+        <p>
+            <span>Welcome to the <strong>UMT Campus Bakery</strong>!</span> 
+            We are the best bakery on campus, offering a variety of <em>fresh bread, pastries, and coffee</em>.
+
+        </p>
+        <ul>
+            <li>Artisan pastries and desserts</li>
+            <li>Quality coffee</li>
+        </ul>
+        Social Media: <a target="_blank" href="https://www.instagram.com/umtbakery/">Instagram</a><br><br>
+
+        <hr>
+        <h2>Order Form</h2>
+        <form>
+            Customer name:<input type="text" name="name" placeholder="Enter your name" required autofocus autocomplete="name"><br><br>
+            Email:<input type="email" name="email" placeholder="Enter your email" required><br><br>
+            Phone number:<input type="tel" name="phone" placeholder="Enter your phone number" required><br><br>
+            Pick-up date:<input type="date" name="pickup"><br><br>
+            Pick-up time:<input type="time" name="time"><br><br>
+            Cupcake Flavour:<datalist id="cakeflavours">
+                             <option value="Strawberry">
+                             <option value="Chocolate">
+                             <option value="Vanilla">
+                             <option value="Red Velvet">
+                             </datalist>
+            <input list="cakeflavours" name="flavour" placeholder="Choose cupcake flavour"><br><br>
+            Icing color:<input type="color" name="icing" value="#f0f0f0"><br><br>
+            Sweetness Level:<input type="range" name="sweetness" min="1" max="10" step="1"><br><br> 
+        
+            <input type="submit" value="Submit"> 
+        </form>
+        <h2>Price Calculator</h2>
+        <form oninput="results.value=(cupcake.valueAsNumber||0)*3 + (coffee.valueAsNumber||0)*1.5">
+            <input id="cupcake" name="cupcake" type="number" min="0" value="0">cupcakes+
+            <input id="coffee" name="coffee" type="number" min="0" value="0">coffee=
+            <output name="results" for="cupcake coffee"></output><br><br>
+        </form>
+    </div>
+
+    <!-- Sidebar -->
+    <hr>
+    <div id="sidebar">
+        <h2>Price list</h2>
+        <ul>
+            <li>Cupcake: &euro;3.00</li>
+            <li>Coffee: &euro;1.50</li>
+        </ul>
+        <p>Orders &gt; 10 pieces get a free cup of coffee!</p>
+    </div>
+    <!-- Footer -->
+    <div id="footer">
+        <p>&copy; 2026 UMT Campus Bakery&reg;. All rights reserved.</p>
+    </div>
+</body>
+</html>
