@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculator</title>
 </head>
 <body>
     <!-- Header Section -->
@@ -13,15 +13,13 @@
     </div>
 
     <!-- Main Content Area -->
+     <hr>
     <div id="content">
         <h2>Contact Form</h2>
         <form>
-            <label for="useremail">Email:</label>
-            <input type="email" id="useremail" name="useremail"><br><br>
-            <label for="date">Preferred contact date:</label><br>
-            <input type="date" id="date" name="date"><br><br>
-            <label for="satisfaction">Satisfaction level:</label><br>
-            <input type="range" id="satisfaction" name="satisfaction" min="1" max="10" step="1"><br><br>
+            Email:<input type="email" name="useremail"><br><br>
+            Preferred contact date:<input type="date" name="date"><br><br>
+            Satisfaction Level:<input type="range" name="satisfaction" min="1" max="10"><br><br>
             <input type="submit" value="Submit">
         </form>
     </div>
@@ -30,8 +28,8 @@
     <div id="inlinecalc">
         <h2>Inline Calculator</h2>
         <form oninput="results.value=parseInt(number1.value)+parseInt(number2.value)">
-            <input type="text" id="number1" name="number1" value="0">0<br>+
-            <input type="text" id="number2" name="number2" value="0">0<br>=
+            <input type="text" id="number1" name="number1" value="0">+
+            <input type="text" id="number2" name="number2" value="0">=
             <output name="results" for="number1 number2"></output>
         </form>
     </div>
