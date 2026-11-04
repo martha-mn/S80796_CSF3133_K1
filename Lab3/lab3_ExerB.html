@@ -1,0 +1,53 @@
+ <!DOCTYPE html> 
+   <html lang="en"> 
+   <head> 
+       <meta charset="utf-8"> 
+       <title>Ticket Booking</title> 
+   </head> 
+<!--Error1 (Line1): html missing from !DOCTYPE-->
+<!--Error2 (Line9): Incorrect nesting of <h1> and <span>-->
+<!--Error3 (Line15 and Line42): Element div should be used instead of span for id content-->
+<!--Error4 (Line18): &lt; should be used to show "<"-->
+<!--Error5 (Line19): &amp should end with ";"-->
+<!--Error6 (Line24): Missing autocomplete attribute-->
+<!--Error7 (Line27): Misspelling of "email"-->
+<!--Error8 (Line50): &copy; should be in lowercase-->
+<!--Error9 (Line52): Extra end tags for body and html-->
+<!--Error10 (Line34): id of datalist should be used in list attribute of input-->
+
+   <body> 
+   <div id="header"> 
+       <h1>e-Ticket <span>Your Campus Cinema</span></h1> 
+  </div> 
+  <div id="content"> 
+      <h2>Book Your Ticket</h2> 
+      <p>Promotion: tickets &lt; RM10 for students &amp; staff!</p> 
+      <form action="booking.php" oninput="total.value = adult.value + 
+child.value"> 
+          <label for="name">Name:</label> 
+          <input type="text" id="name" name="name" placeholder="Enter your name" required autofocus autocomplete="name"><br> 
+          <label for="email">E-mail:</label> 
+          <input type="email" id="email" name="email" autocomplete="email"><br> 
+          <label for="date">Show date:</label> 
+          <input type="date" id="date" name="date"><br> 
+          <label for="movie">Movie:</label> 
+          <input id="movie" name="movie" list="movielist"><br> 
+          <datalist id="movielist"> 
+              <option value="Space Rangers"> 
+              <option value="Kampung Comedy"> 
+          </datalist> 
+          <label for="adult">Adult tickets:</label> 
+          <input type="number" id="adult" name="adult" value="0"><br> 
+          <label for="child">Child tickets:</label> 
+          <input type="number" id="child" name="child" value="0"><br> 
+          <label for="rating">Rate our service:</label> 
+          <input type="range" id="rating" name="rating" min="5" max="1"><br> 
+          Total tickets: <output name="total" for="adult child"></output><br> 
+          <input type="submit" value="Book Now"> 
+      </form> 
+    </div> 
+  <div id="footer"> 
+      <p>&copy; 2026 CineKampus. All rights reserved.</p> 
+  </div> 
+  </body> 
+  </html>  
