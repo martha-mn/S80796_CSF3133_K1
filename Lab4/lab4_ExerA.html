@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism Promotion Page</title>
+
+    <!-- External CSS link -->
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        
+        header {
+            background-color: #006699;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+
+    <style>
+        h1 {
+            text-decoration: overline;
+        }
+        h2 {
+            text-decoration: underline;
+        }
+        meter {
+            width: 80%;
+            height: 20px;
+            }
+
+        nav ul {
+            list-style-type: none;
+            text-decoration: none;
+            background-color: aqua;
+            padding: 10px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        a:link {
+            color: #0056b3;
+        }
+        a:visited {
+            color: #5a2d82;
+        }
+        a:hover {
+             color: #d9534f;
+        }
+        a:active {
+             color: #ff9900;
+        }
+
+        #destinations, #video, #trip {
+            width: 90%; 
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            }
+
+        #trip {
+            background-color: #e6f7ff;
+            padding: 20px;
+            border-radius: 5px;
+            width: 90%;
+            }
+        .old-price {
+                text-decoration: line-through;
+                color: #d9534f; 
+                margin-right: 8px;
+            }
+        .new-price {
+                color: #5cb85c; 
+                font-weight: bold;
+            }
+    </style>
+</head>
+
+<body>
+    <header>
+    <!-- This is the header section -->
+    <h1>Welcome to Visit Terengganu</h1>
+    <p>Discover the beauty and culture of Terengganu!</p>
+    </header> 
+    
+    <!-- This is the navigation section -->
+    <nav>
+        <ul>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#trip">Trip BookingForm</a></li>
+        </ul>
+    </nav>
+
+    <!-- This is the destinations section -->
+    <section id="destinations">
+       <h2>Popular Destinations</h2>
+       <p>Check out our special promotional trip packages below:</p>
+       
+       <article>
+            <h3>Redang Island</h3>
+            <p>Crystal clear waters, white sandy beaches, and vibrant marine life awaiting your discovery.</p>
+            <p class="price">
+                Price: <span class="old-price">RM 299</span> <span class="new-price">RM 199</span>
+            </p>
+        </article>
+        <article>
+            <h3>Perhentian Islands</h3>
+            <p>Experience the serene beauty of the Perhentian Islands, perfect for snorkeling and diving.</p>
+            <p class="price">
+                Price: <span class="old-price">RM 399</span> <span class="new-price">RM 249</span>
+            </p>
+        </article>
+        <article>
+            <h3>Kapas Island</h3>
+            <p>Discover the pristine beaches and rich cultural heritage of Kapas Island.</p>
+            <p class="price">
+                Price: <span class="old-price">RM 249</span> <span class="new-price">RM 149</span>
+            </p>
+        </article>
+
+        <div class="meter">
+            <p><strong>Trip Seats Availability:</strong></p>
+            <meter min="0" max="40" value="28"></meter>
+            <p>28 out of 40 seats filled</p>
+        </div>
+    </section>
+
+    <!-- This is the video section -->
+    <section id="video">
+        <h2>Promotional Video</h2>
+        <figure>
+            <video width="320" height="240" controls>
+                <source src="terengganu_promo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <figcaption>Watch our promotional video to explore the wonders of Terengganu!</figcaption>
+        </figure>
+    </section>
+
+    <!-- This is the trip booking section -->
+    <section id="trip">
+        <h2>Trip Booking Form</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+
+            <label>Traveller Type:</label>
+            <input type="radio" id="student" name="travtype" value="student">
+            <label for="student">Student</label>
+            <input type="radio" id="staff" name="travtype" value="staff">
+            <label for="staff">Staff</label>
+            <input type="radio" id="public" name="travtype" value="public">
+            <label for="public">Public</label><br><br>
+
+            <label>Interests:</label>
+            <input type="checkbox" id="islands" name="interests" value="islands">
+            <label for="islands">Islands</label>
+            <input type="checkbox" id="Food" name="interests" value="food">
+            <label for="Food">Food</label>
+            <input type="checkbox" id="culture" name="interests" value="culture">
+            <label for="culture">Culture</label>
+            <input type="checkbox" id="nature" name="interests" value="nature">
+            <label for="nature">Nature</label><br><br>
+            <br><br>
+
+            <input type="submit" value="Book Trip">
+        </form>
+    </section>
+
+    <!-- This is the footer -->
+    <footer>
+        <p>Email: <a href="mailto:info@about.com">info@about.com</a></p>
+        <p>&copy; 2024 Visit Terengganu. All rights reserved.</p>
+    </footer>
+</body>
+</html>
